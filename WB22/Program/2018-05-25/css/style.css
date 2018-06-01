@@ -1,0 +1,164 @@
+/* HTML */
+html{
+	margin:0px;
+	padding:0px;
+}
+.dummy{
+	width: 100px;
+	height: 100px;
+}
+.relative{
+	position: relative;
+}
+/* Body */
+body{
+	background-color:#ddd;
+}
+/* Wrapper */
+#wrapper{
+	width:900px;
+	/* height:2000px; */
+	background-color:#fff;
+	margin:0 auto;
+	padding-bottom: 50px;
+}
+#main_image{
+	background-image: url(../image/other12.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	width:auto;
+	height:520px;
+	/* background-color: aqua; */
+}
+.border{
+	/* padding: 10px; */
+	border:solid 2.5px rgb(253, 215, 91);
+	box-sizing: border-box;
+}
+#content1{
+	margin:20px;
+	padding: 20px; 
+	height: 300px;
+}
+#content1 img{
+	/* margin:20px; */
+	width: 400px;
+	float: left;
+}
+#content1 :nth-child(2){
+	margin-top:20px;
+	margin-left:15px;
+	width: 400px;
+	float: left;
+	font-size: 14px;
+}
+#content2{
+	margin:60px 20px;
+	padding: 20px; 
+	height: 750px;
+}
+#content2 img{
+	display: block;
+	margin: 20px auto;
+	width: 60%;
+}
+#content2 h2{
+	width: 20%;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	position: absolute;
+	background-color:#fff;
+	top: -40px;
+	left: 40%;
+}
+#content2 :nth-child(4){
+	margin: 40px auto;
+	text-align: center;
+}
+#content3{
+	margin:20px;
+	padding: 20px; 
+	height: 700px;
+}
+#content3 h2{
+	width: 20%;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	position: absolute;
+	background-color:#fff;
+	top: -40px;
+	left: 40%;
+}
+#content3 img{
+	width: 400px;
+	float: left;
+}
+#content3 :nth-child(4){
+	margin-top:15px;
+	margin-left:15px;
+	width: 400px;
+	float: left;
+	font-size: 14px;
+}
+#content3 :nth-child(6){
+	margin-top:15px;
+	margin-left:15px;
+	width: 400px;
+	float: left;
+	font-size: 14px;
+}
+#content4{
+	margin:60px 20px;
+	padding: 20px; 
+	height: 700px;
+}
+#content4 h2{
+	width: 20%;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	position: absolute;
+	background-color:#fff;
+	top: -40px;
+	left: 40%;
+}
+#content4 img{
+	width: 400px;
+	float: left;
+}
+#content4 :nth-child(4){
+	margin-top:-20px;
+	margin-left:15px;
+	width: 400px;
+	float: left;
+	font-size: 14px;
+}
+#content4 :nth-child(6){
+	margin-top:-20px;
+	margin-left:15px;
+	width: 400px;
+	float: left;
+	font-size: 14px;
+}
+#content5{
+	margin:60px 20px;
+	padding: 20px; 
+	/* height: 750px; */
+}
+#content5 img{
+	display: block;
+	margin: 20px auto;
+	width: 100%;
+}
+#content5 h2{
+	width: 20%;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	position: absolute;
+	background-color:#fff;
+	top: -40px;
+	left: 40%;
+}

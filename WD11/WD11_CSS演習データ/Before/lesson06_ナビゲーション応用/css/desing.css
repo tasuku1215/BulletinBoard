@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*------------------------------*/
+/*------- 左袖メニュー型 -------*/
+/*------------------------------*/
+
+/*STEP1：BOX化と文字列を外に追い出す ---------------------------*/
+#naviBox1 a {
+/*横幅指定：200px*/
+width:200px;
+/*高さ指定：40px*/
+height:40px;
+/*インライン要素をブロックレベル要素へ変換*/
+display:block;
+text-indent:-999999px;/*文字列を外に追い出す*/
+
+}
+
+#naviBox1 li {
+/*リストスタイルをリセットする*/
+}
+
+
+
+/*STEP2：通常時の画像を表示 ---------------------------*/
+/*セレクタの組み合わせで指定する*/
+.navi1 a{
+  background-image:url(../img/navi_01.gif);
+}
+.navi2 a{
+  background-image:url(../img/navi_02.gif);
+}
+.navi3 a{
+  background-image:url(../img/navi_03.gif);
+}
+.navi4 a{
+  background-image:url(../img/navi_04.gif);
+}
+.navi5 a{
+  background-image:url(../img/navi_05.gif);
+}
+/*STEP3：カーソルON時の画像を表示 ---------------------------*/
+.navi1 a:hover{
+  background-image:url(../img/navi_hover_01.gif);
+}
+.navi2 a:hover{
+  background-image:url(../img/navi_hover_02.gif);
+}
+.navi3 a:hover{
+  background-image:url(../img/navi_hover_03.gif);
+}
+.navi4 a:hover{
+  background-image:url(../img/navi_hover_04.gif);
+}
+.navi5 a:hover{
+  background-image:url(../img/navi_hover_05.gif);
+}
+/*------------------------------*/
+/*-------- 上部メニュー型 ---------*/
+/*------------------------------*/
+
+/*STEP4：BOX化と文字列を外に追い出す ---------------------------*/
+
+
+
+
+
+/*STEP5：ナビゲーションボタンを横一列に並べる ---------------------------*/
+
+
+
+
+
+/*STEP6：ナビゲーションボタンが格納されているBOXのサイズを指定する ---------------------------*/

@@ -1,0 +1,108 @@
+﻿@charset "utf-8";
+/*ブラウザの持つパディング・マージンのスタイルをリセットする*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*全体を囲むBOX*/
+#wrapper {
+	width: 400px;
+	/*全体のBOXを中央に配置する設定*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*STEP.08*/
+/*背景に画像を入れる*/
+body {
+	background-image:url(../img/chopper.gif);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:right bottom;
+/*画像の指定*/
+/*繰返しの指定：繰返しをしない*/
+/*画像の配置場所を決める*/
+/*背景画像を固定する*/
+}
+
+/*個々のBOXを指定*/
+.boxSize {
+	width: 400px;/*横幅*/
+	height: 400px;/*縦幅*/
+	border: 1px solid #000;/*ボーダーの幅・種類・色*/
+	margin: 50px 0;/*マージン（上下に50px・左右0px）*/
+	background-color: #ff0;/*背景色*/
+}
+
+/*--------------------------*/
+/*それぞれのBOXの背景に画像を表示する*/
+/*--------------------------*/
+
+/*STEP.01*/
+/*背景に画像を入れる*/
+.pattern1 {
+ background-image:url(../img/pattern_1.png);
+/*画像の指定*/
+}
+
+/*STEP.02*/
+/*背景に画像を入れ、繰り返しをしない設定にする*/
+.pattern2 {
+	background-image:url(../img/pattern_2.png);
+	background-repeat:no-repeat;
+/*画像の指定*/
+/*繰返しの指定：繰返しをしない*/
+}
+
+/*STEP.03*/
+/*背景に画像を入れ、横方向に繰返し処理をする*/
+.pattern3 {
+	background-image:url(../img/pattern_3.png);
+	background-repeat:repeat-x;
+/*画像の指定*/
+/*繰返しの指定：横方向に繰返し*/
+}
+
+/*STEP.04*/
+/*背景に画像を入れ、縦方向に繰返し処理をする*/
+.pattern4 {
+	background-image:url(../img/pattern_4.gif);
+	background-repeat:repeat-y;
+/*画像の指定*/
+/*繰返しの指定：縦方向に繰返し*/
+}
+
+/*STEP.05*/
+/*背景に画像を入れ、繰返し処理をする（デフォルトの状態）*/
+.pattern5 {
+	background-image:url(../img/pattern_5.gif);
+	background-repeat:repeat;
+/*画像の指定*/
+/*繰返しの指定：縦横共に繰返し*/
+}
+
+/*STEP.06*/
+/*背景に画像を入れ、繰返し処理をせずに画像の表示する場所を変える*/
+.pattern6 {
+	background-image:url(../img/pattern_6.gif);
+	background-repeat:no-repeat;
+	background-position:50px 100px;
+/*画像の指定*/
+/*繰返しの指定：繰返しをしない*/
+/*画像の表示位置を指定する*/
+}
+
+/*STEP.07*/
+/*自由に背景に画像を入れる*/
+.pattern7 {
+}
+
+.pattern8 {
+}
+
+.pattern9 {
+}
+
+.pattern10 {
+}

@@ -1,0 +1,56 @@
+#wrapper2 {
+	width: 1500px;
+	margin: 0 auto;
+}
+#img-main{
+  width:1500px;
+  margin:0 auto;
+  /*position: relative;*/
+}
+#aaa{
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 13%;
+  font-size:2em;
+}
+#nav{
+  margin:0 auto;
+}
+#img-logo{
+  width:500px;
+  margin:0 auto;
+  border:3px;
+}
+.box1{
+  float:left;
+  font-size:40px;
+  width:370px;
+  color:#55f;
+}
+#chara{
+  width:1500px;
+}
+#chara .chara{
+  width:1500px;
+  margin:0 auto;
+}
+.gazo{
+  float:left;
+  margin-bottom:100px;
+}
+.mozi{
+  float:left;
+  width:1000px;
+  font-size:30px;
+}
+.rap{
+  float:left;
+  width:1500;
+
+}
+.mozi2{
+  float:inherit;
+  width:1000px;
+  font-size:30px;
+}

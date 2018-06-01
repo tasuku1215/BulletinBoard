@@ -1,0 +1,92 @@
+﻿@charset "utf-8";
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-image:url(images/monyo.gif);
+}
+#shadow{
+	margin:auto;
+	width:830px;
+	height:615px;
+	background-image:url(images/shadow.png);
+}
+#wrapper{
+	height:615px;
+	width:800px;
+	background-color:white;
+	margin:auto;
+	position:relative;
+}
+#osu{
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+#box1{
+	width:800px;
+	background-image:url(images/h1Back.png);
+	background-color:#fee;
+	float:left;
+}
+#box2{
+	width:800px;
+	float:left;
+}
+#box3{
+	width:800px;
+	height:50px;
+	background-color:black;
+	float:left;
+	margin-bottom:10px;
+}
+#box3 li{
+	list-style:none;
+	float:left;
+}
+#box3 a{
+	width:160px;
+	display:block;
+	text-decoration:none;
+	color:white;
+	line-height:50px;
+	text-align:center;
+}
+#box4{
+	width:230px;
+	background-color:white;
+	float:left;
+	margin:10px;
+}
+#box4 a{
+	text-decoration:none;
+}
+#box5{
+	width:280px;
+	background-color:white;
+	float:left;
+	margin:10px;
+}
+#box6{
+	width:230px;
+	background-color:white;
+	float:left;
+	margin:10px;
+}
+#box7{
+	height:50px;
+	width:800px;
+	clear:both;
+	float:left;
+	background-color:black;
+}
+#box7 p{
+	color:white;
+	text-align:center;
+	line-height:50px;
+}
+p{
+	font-size:small;
+	line-height:20px;
+}

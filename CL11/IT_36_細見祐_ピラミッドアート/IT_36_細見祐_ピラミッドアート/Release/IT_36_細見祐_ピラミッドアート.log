@@ -1,0 +1,20 @@
+﻿2017/06/30 9:32:33 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\work\cl11\IT_36_細見祐_ピラミッドアート\IT_36_細見祐_ピラミッドアート\IT_36_細見祐_ピラミッドアート.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "IT_36_細見祐_ピラミッドアート.cpp"
+         IT_36_細見祐_ピラミッドアート.cpp
+     1>IT_36_細見祐_ピラミッドアート.cpp(96): warning C4101: 'val2' : ローカル変数は 1 度も使われていません。
+     1>IT_36_細見祐_ピラミッドアート.cpp(409): warning C4101: 'val2' : ローカル変数は 1 度も使われていません。
+     1>IT_36_細見祐_ピラミッドアート.cpp(475): warning C4101: 'val3' : ローカル変数は 1 度も使われていません。
+     1>IT_36_細見祐_ピラミッドアート.cpp(475): warning C4101: 'val2' : ローカル変数は 1 度も使われていません。
+     1>IT_36_細見祐_ピラミッドアート.cpp(475): warning C4101: 'hen3' : ローカル変数は 1 度も使われていません。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\work\cl11\IT_36_細見祐_ピラミッドアート\Release\IT_36_細見祐_ピラミッドアート.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\work\cl11\IT_36_細見祐_ピラミッドアート\Release\IT_36_細見祐_ピラミッドアート.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\work\cl11\IT_36_細見祐_ピラミッドアート\Release\IT_36_細見祐_ピラミッドアート.lib" /MACHINE:X86 /SAFESEH "Release\IT_36_細見祐_ピラミッドアート.obj"
+         コード生成しています。
+         コード生成が終了しました。
+         IT_36_細見祐_ピラミッドアート.vcxproj -> C:\work\cl11\IT_36_細見祐_ピラミッドアート\Release\IT_36_細見祐_ピラミッドアート.exe
+     1>プロジェクト "C:\work\cl11\IT_36_細見祐_ピラミッドアート\IT_36_細見祐_ピラミッドアート\IT_36_細見祐_ピラミッドアート.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:02.04
