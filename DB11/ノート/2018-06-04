@@ -37,8 +37,8 @@ no action エラーが発生
 cascade 親テーブルに行われた処理と同じ処理が行われる
 set null 子テーブルにはNULLが設定される
 
-
-
+show create table テーブル名 \G;
+                              縦に出力される
 
 
 
