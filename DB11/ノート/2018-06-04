@@ -25,8 +25,17 @@ MYSQLは全てスクリーンショットを取る
 印刷データを白背景にすること
 
 
+alter table 子テーブル add
+foreign key (外部キー)
+references 親テーブル(カラム)
+on update オプション名
+on delete オプション名
 
-
+オプション
+restrict エラーが発生(デフォルト)
+no action エラーが発生
+cascade 親テーブルに行われた処理と同じ処理が行われる
+set null 子テーブルにはNULLが設定される
 
 
 
