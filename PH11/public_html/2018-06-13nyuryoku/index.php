@@ -3,11 +3,12 @@ require_once './func.php';
 $error['name']='';
 $error['tel']='';
 $error['mail']='';
-$error[0]=0;
+$error['frag']=0;
 $name='';
 $tel='';
 $mail='';
-if(isset($_GET['enter'])){
+if(isset($_GET['enter']))
+{
   if($_GET['name']=='')
   {
     $error['name']='未入力です';
@@ -15,7 +16,7 @@ if(isset($_GET['enter'])){
   else
   {
     $name=h($_GET['name']);
-    $error[0]+=1;
+    $error['frag']+=1;
   }
   if($_GET['tel']=='')
   {
@@ -24,7 +25,22 @@ if(isset($_GET['enter'])){
   else
   {
     $tel=h($_GET['tel']);
-    $error[0]+=1;
+    if(is_numeric($_GET['tel']))
+    {
+      $len=strlen($_GET['tel']);
+      if(9<=$len && $len<=12)
+      {
+        $error['frag']+=1;
+      }
+      else
+      {
+        $error['tel']='正常な桁数を入力してください';
+      }
+    }
+    else
+    {
+      $error['tel']='電話番号を入力してください';
+    }
   }
   if($_GET['mail']=='')
   {
@@ -33,7 +49,21 @@ if(isset($_GET['enter'])){
   else
   {
     $mail=h($_GET['mail']);
-    $error[0]+=1;
+    if(preg_match('/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/',$_GET['mail']))
+    {
+      $error['frag']+=1;
+    }
+    else
+    {
+      $error['mail']='正しいメールアドレスの形式で入力されていません';
+    }
+  }
+  if($error['frag']==3){
+    session_start();
+    $_SESSION['name']=$name;
+    $_SESSION['tel']=$tel;
+    $_SESSION['mail']=$mail;
+    header('location:confirm.php');
   }
 }
 ?>
