@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*ブラウザが持つパディングとマージンの設定をリセットする*/
+*{
+  margin:0px;
+  padding:0px;
+}
+
+
+/*STEP1：aの設定をする*/
+/*（※今回の場合は、縦型・横型共通の設定）*/
+a {
+  width:150px;
+  background-color:#ff0;
+  display:block;
+  color:#090;
+  text-decoration:none;
+  padding:10px;
+  border-left:solid 5px #000;
+/*横幅*/
+/*背景色*/
+/*インライン要素をブロックレベル要素にする*/
+/*文字色*/
+/*左側にボーダーを付ける*/
+/*リンクの下線を消す*/
+/*表示エリアを広げる（paddingで設定）*/
+}
+
+
+/*STEP2：liの設定をする*/
+#nav_1 li {
+  list-style:none;
+  margin-bottom:5px;
+/*リストのスタイルをリセット*/
+/*ナビゲーション同士の間隔をあける*/
+}
+
+
+/*STEP3：hover（マウスがナビゲーションの上に合わさったとき）の設定をする*/
+#nav_1 a:hover {
+  color:#fff;
+  background-color:#f60;
+  border-left:solid 5px #900;
+/*aに対してhoverの設定をする*/
+/*hoverしたときの文字色を指定*/
+/*hoverしたときの背景色を指定*/
+/*hoverしたときの左側のボーダー色を指定*/
+}
+
+
+/*STEP4：liの設定をする*/
+#nav_2 li {
+  float:left;
+  list-style:none;
+/*リストのスタイルをリセット*/
+/*フロートを適用し、ナビゲーションボタンを横に並べる*/
+}
+
+
+/*STEP5：hover（マウスがナビゲーションの上に合わさったとき）の設定をする*/
+#nav_2 a:hover {
+/*hoverしたときの文字色を指定*/
+/*hoverしたときの背景色を指定*/
+}
+
+/*STEP6：ナビゲーションボタンの横幅の設定をする*/
+#nav_2 {
+
+}

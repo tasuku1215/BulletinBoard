@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+
+/*----　リセット　--------------*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+/*----　ベース　--------------*/
+body {
+	font-size: 140%;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*----　全体のBOX　--------------*/
+#wrapper {
+	width: 850px;
+	margin:20px auto 0px auto;
+}
+
+
+/*----　BOXレイアウト　-------------------------------*/
+
+/*----　左のBOX　--------------*/
+#left {
+	width: 200px;
+	float:left;
+	margin:0px 50px 20px 0px;
+}
+
+#box1 {
+	background-color: #cf3;
+	height: 200px;
+	width: 200px;
+	margin:0px 0px 20px 0px;
+}
+
+#box2 {
+	background-color: #66f;
+	height: 400px;
+	width: 200px;
+}
+
+/*----　その他BOX　--------------*/
+#box3 {
+	background-color: #c9c;
+	height: 620px;
+	width: 600px;
+	float:left;
+	margin:0px 0px 20px 0px;
+}
+
+#box4 {
+	background-color: #fc0;
+	height: 50px;
+	width: 850px;
+	clear:both;
+}

@@ -1,4 +1,0 @@
-﻿  Source.cpp
-h:\work\cl11\ループmax\ループmax\source.cpp(4): warning C4101: 'col': ローカル変数は 1 度も使われていません。
-  ループMAX.vcxproj -> H:\work\cl11\ループMAX\Debug\ループMAX.exe
-  ループMAX.vcxproj -> H:\work\cl11\ループMAX\Debug\ループMAX.pdb (Partial PDB)

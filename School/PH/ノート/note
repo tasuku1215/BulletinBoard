@@ -1,0 +1,6 @@
+DB接続
+PHPのプログラムからMySQL（DB）と接続を行う
+接続用としてPDOクラスやmysqli関数（クラス）
+などが用意されている
+$link=mysqli connect('localhost','root','','ph22');
+mysqli_set_charset($link,'utf8');

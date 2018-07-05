@@ -1,0 +1,16 @@
+@charset "utf-8";
+#box1 {
+	background-color: #6CC;
+	height: 100px;
+	width: 200px;
+}
+#box2 {
+	background-color: #F6C;
+	height: 100px;
+	width: 200px;
+}
+#box3 {
+	background-color: #3F6;
+	height: 100px;
+	width: 200px;
+}

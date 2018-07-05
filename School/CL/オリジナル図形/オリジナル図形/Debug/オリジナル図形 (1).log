@@ -1,0 +1,17 @@
+﻿2017/06/26 12:07:51 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\work\cl11\オリジナル図形\オリジナル図形\オリジナル図形.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\work\cl11\オリジナル図形\オリジナル図形\source.cpp(5): warning C4101: 'yoko2' : ローカル変数は 1 度も使われていません。
+     1>c:\work\cl11\オリジナル図形\オリジナル図形\source.cpp(5): warning C4101: 'val2' : ローカル変数は 1 度も使われていません。
+     1>c:\work\cl11\オリジナル図形\オリジナル図形\source.cpp(5): warning C4101: 'val' : ローカル変数は 1 度も使われていません。
+     1>c:\work\cl11\オリジナル図形\オリジナル図形\source.cpp(5): warning C4101: 'yoko' : ローカル変数は 1 度も使われていません。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\work\cl11\オリジナル図形\Debug\オリジナル図形.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\work\cl11\オリジナル図形\Debug\オリジナル図形.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\work\cl11\オリジナル図形\Debug\オリジナル図形.lib" /MACHINE:X86 Debug\Source.obj
+         オリジナル図形.vcxproj -> C:\work\cl11\オリジナル図形\Debug\オリジナル図形.exe
+     1>プロジェクト "C:\work\cl11\オリジナル図形\オリジナル図形\オリジナル図形.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:01.09

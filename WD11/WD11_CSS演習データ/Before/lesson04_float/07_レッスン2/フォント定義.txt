@@ -1,8 +1,0 @@
-"ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic"
-
-
-"‚l‚r ƒSƒVƒbƒN", "MS Gothic", "Osaka|“™•", Osaka-mono, monospace
-
-
-"ƒqƒ‰ƒMƒm–¾’© Pro W3", "Hiragino Mincho Pro","‚l‚r ‚o–¾’©", "MS PMincho",  serif
-

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+div div{
+  border:solid 5px #000;
+  float:left;
+  width:200px;
+  height:300px;
+  margin:20px;
+}
+#main{
+  width:1000px;
+  height:500px;
+  border:solid 5px #000;
+
+}

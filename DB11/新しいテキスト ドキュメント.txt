@@ -1,1 +1,0 @@
-﻿select avg(customer_code) from customers;

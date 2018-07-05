@@ -1,0 +1,111 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	background-color:#ddd;
+}
+#wrapper{
+	width:900px;
+	height:1200px;
+	margin:0 auto;
+}
+#menu{
+	width:900px;
+	height:80px;
+	background-color:rgb(231, 233, 150);
+	position:fixed;
+	top:0px;
+	margin:0 auto;
+}
+#menu ul{
+	list-style:none;
+	text-decoration:none;
+}
+#menu ul a{
+	display:block;
+	width:300px;
+	float:left;
+	font-size:40px;
+	text-align:center;
+	padding-top:10px;
+	text-decoration:none;
+	color:#000;
+}
+#menu ul a:visited{
+	color:#000;
+}
+#top{
+	position:fixed;
+	top:80px;
+	z-index:-1;
+}
+#con{
+	margin:500px 0 0 0;
+	width:600px;
+	height:650px;
+	float: left;
+}
+#con1{
+	margin:500px 0 0 0;
+}
+
+#con h2{
+	background-color:#fff;
+}
+#suma{
+	z-index:2;
+	width:auto;
+}
+#saka{
+	position: fixed;
+	right:1500px;
+	bottom:200px;
+	z-index:-1;
+}
+#sai{
+	position: fixed;
+	left:1500px;
+	bottom:200px;
+	z-index:-1;
+}
+#hutari{
+	position:relative;
+	z-index:-2;
+}
+#con p{
+	float:left;
+	margin-right: 5px;
+}
+#tw{
+	margin:500px 0 0 10px;
+	float:left;
+
+}
+#pro{
+	margin:500px 0 0 0;
+	position:relative;
+}
+#saigou{
+	float:left;
+}
+#sakas{
+	float:left;
+	width:300px;
+	background-color:rgb(255, 255, 255);
+	font-size:1.8em;
+	margin:100px 190px 0 10px;
+}
+#saigos{
+	width:400px;
+	background-color:rgb(255, 255, 255);
+	font-size:1.8em;
+	position:absolute;
+	right:210px;
+	top:300px;
+}
+
+#sakamoto{
+	float:left;
+}
