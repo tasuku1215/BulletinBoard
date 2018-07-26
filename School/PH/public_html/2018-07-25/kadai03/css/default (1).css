@@ -1,0 +1,12 @@
+#w{
+  width:800px;
+  margin:0 auto;
+}
+img{
+  position:absolute;
+  right:0px;
+  bottom:0px;
+}
+body{
+  background-color:skyblue;
+}

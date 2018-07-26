@@ -5,3 +5,5 @@ PHPのプログラムからMySQL（DB）と接続を行う
 $link=mysqli connect('localhost','root','','ph22');
 mysqli_set_charset($link,'utf8');
 mysqli_close($link);
+mysqli_query($link,$sql);
+mysqli_fetch_assoc($result)
