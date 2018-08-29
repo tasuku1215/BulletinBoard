@@ -91,6 +91,7 @@
   if(empty($t_post)){
     $t_post=array();
   }
+  // var_dump($t_post);
   // 配列を反転させ投稿日時順の降順にする
   $t_post = array_reverse($t_post,true);
   // テンプレート呼び出し
