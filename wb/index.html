@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="ページの内容を記述">
+    <meta name="keywords" content="キーワード,カンマで区切り,指定">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.js" charset="utf-8"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+      <script src="sample.js"></script>
+  </head>
+  <body>
+    <h2>実施日時及び出店学科</h2>
+    <hr>
+    <div class="wrapper">
+      <form action="next.php" method="get">
+        <dl>〇大阪校2月2日（金）</dl>
+        <dd>
+          <input type="checkbox" name="oosaka" value="game">ゲーム分野
+          <input type="checkbox" name="oosaka" value="digital">デジタル映像分野
+          <input type="checkbox" name="oosaka" value="graphic">グラフィックデザイン分野
+          <input type="checkbox" name="oosaka" value="sound">サウンド部門
+          <br>
+          <input type="checkbox" name="oosaka" value="data">情報処理システム分野
+          <input type="checkbox" name="oosaka" value="web">WEB開発分野
+          <input type="checkbox" name="oosaka" value="ro">制御系システム分野
+          <input type="checkbox" name="oosaka" value="car">カーデザイン分野
+        </dd>
+        <dl>〇名古屋校2月9日（金）</dl>
+        <dd>
+          <input type="checkbox" name="nagoya" value="game">ゲーム分野
+          <input type="checkbox" name="nagoya" value="digital">デジタル映像分野
+          <input type="checkbox" name="nagoya" value="graphic">グラフィックデザイン分野
+          <input type="checkbox" name="nagoya" value="sound">サウンド部門
+          <br>
+          <input type="checkbox" name="nagoya" value="data">情報処理システム分野
+          <input type="checkbox" name="nagoya" value="web">WEB開発分野
+          <input type="checkbox" name="nagoya" value="ro">制御系システム分野
+          <input type="checkbox" name="nagoya" value="car">カーデザイン分野
+        </dd>
+        <dl>〇東京校 ※２日開催</dl>
+        <dd class="left">
+          ２/１５：
+          <input type="checkbox" name="tokyo" value="game">ゲーム分野
+          <input type="checkbox" name="tokyo" value="digital">デジタル映像分野
+          <input type="checkbox" name="tokyo" value="sound">サウンド部門
+          <br>
+          ２/１６：
+          <input type="checkbox" name="tokyo" value="graphic">グラフィックデザイン分野
+          <input type="checkbox" name="tokyo" value="data">情報処理システム分野
+          <br>
+          <input type="checkbox" name="tokyo" value="web" class="right">WEB開発分野
+          <input type="checkbox" name="tokyo" value="ro">制御系システム分野
+          <input type="checkbox" name="tokyo" value="car">カーデザイン分野
+        </dd>
+      </div>
+      <hr>
+      <h2>参加企業情報</h2>
+      <hr>
+      <div class="wrapper">
+        <table>
+          <tr>
+            <th>
+              企業名
+            </th>
+            <td>
+              <input type="text" name="cName" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              企業所在地
+            </th>
+            <td>
+              <input type="text" name="cAddress" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              企業電話番号
+            </th>
+            <td>
+              <input type="text" name="cTel" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              代表者
+            </th>
+            <td>
+              <input type="text" name="cTop" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              担当者
+            </th>
+            <td>
+              <input type="text" name="cTantou" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              担当者役職
+            </th>
+            <td>
+              <input type="text" name="cTY" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              担当者電話番号
+            </th>
+            <td>
+              <input type="text" name="cTTel" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+                担当者メール
+            </th>
+            <td>
+              <input type="text" name="cTMail" size="50">
+            </td>
+          </tr>
+          <tr>
+            <th>
+              参加人数
+            </th>
+            <td>
+              <input type="text" name="cMeny" size="50">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+      <input type="submit" value="入力内容確認" class="enter">
+    </form>
+  </body>
+</html>

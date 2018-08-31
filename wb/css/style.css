@@ -1,0 +1,37 @@
+.left{
+  margin-left:-35px;
+}
+.right{
+  margin-left: 80px;
+}
+h2{
+  text-align: center;
+  font-size: 1em;
+  font-weight : normal; 
+}
+hr {
+  height: 1px;
+  background-color: #1474B1;
+  border: none;
+  color: #1474B1;
+  }
+.wrapper{
+  width: fit-content;
+  margin: 0 auto;
+}
+th{
+  text-align: left;
+  font-weight: normal;
+  width: 200px;
+  height:30px;
+}
+.enter{
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  background-color: #1474B1;
+  width: 200px;
+  height:50px;
+  border-radius: 1em;
+  font-size: 20px;
+}
