@@ -1,0 +1,293 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: 2018 年 9 月 09 日 23:28
+-- サーバのバージョン： 5.6.38
+-- PHP Version: 7.2.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `YouNext`
+--
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `manager`
+--
+
+CREATE TABLE `manager` (
+  `manager_id` int(128) NOT NULL,
+  `manager_name` varchar(128) NOT NULL,
+  `manager_pass` varchar(128) NOT NULL,
+  `authority_id` int(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `manager_authority`
+--
+
+CREATE TABLE `manager_authority` (
+  `authority_id` int(128) NOT NULL,
+  `Authority_name` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `message`
+--
+
+CREATE TABLE `message` (
+  `message_id` int(128) NOT NULL,
+  `category_id` int(128) NOT NULL,
+  `contact_id` int(128) NOT NULL,
+  `msg` varchar(1024) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `message_categorys`
+--
+
+CREATE TABLE `message_categorys` (
+  `category_id` int(128) NOT NULL,
+  `category_name` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `pay_data`
+--
+
+CREATE TABLE `pay_data` (
+  `user_id` int(128) NOT NULL,
+  `credit_no` int(128) NOT NULL,
+  `credit_date` date NOT NULL,
+  `credit_user` varchar(128) NOT NULL,
+  `plan_id` int(64) NOT NULL,
+  `plan_date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `plan`
+--
+
+CREATE TABLE `plan` (
+  `plan_id` int(64) NOT NULL,
+  `plan_name` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `Users`
+--
+
+CREATE TABLE `Users` (
+  `user_Id` int(128) NOT NULL COMMENT 'ユーザーID',
+  `user_name` varchar(128) NOT NULL COMMENT 'ユーザーネーム',
+  `user_pass` varchar(128) NOT NULL COMMENT 'ユーザーパスワード',
+  `user_mail` varchar(128) NOT NULL COMMENT 'ユーザーメール',
+  `user_tel` varchar(128) NOT NULL COMMENT 'ユーザー電話番号',
+  `user_msg` varchar(512) NOT NULL,
+  `entry_date` date NOT NULL,
+  `del_flag` varchar(128) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='ユーザー';
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `video`
+--
+
+CREATE TABLE `video` (
+  `video_id` int(128) NOT NULL,
+  `category_id` int(128) NOT NULL,
+  `user_id` int(128) NOT NULL,
+  `video_name` varchar(128) NOT NULL,
+  `video_location` varchar(128) NOT NULL,
+  `video_image` varchar(128) NOT NULL,
+  `video_image_location` varchar(128) NOT NULL,
+  `del_flag` int(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `video_categorys`
+--
+
+CREATE TABLE `video_categorys` (
+  `category_id` int(128) NOT NULL,
+  `category_name` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `video_mylist`
+--
+
+CREATE TABLE `video_mylist` (
+  `user_id` int(128) NOT NULL,
+  `video_id` int(128) NOT NULL,
+  `mylist_id` int(128) NOT NULL,
+  `mylist_name` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `watch_data`
+--
+
+CREATE TABLE `watch_data` (
+  `watch_id` int(128) NOT NULL,
+  `user_id` int(128) NOT NULL,
+  `video_id` int(128) NOT NULL,
+  `watch_date` date NOT NULL,
+  `watch_time` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `manager`
+--
+ALTER TABLE `manager`
+  ADD PRIMARY KEY (`manager_id`),
+  ADD KEY `authority_id` (`authority_id`);
+
+--
+-- Indexes for table `manager_authority`
+--
+ALTER TABLE `manager_authority`
+  ADD PRIMARY KEY (`authority_id`);
+
+--
+-- Indexes for table `message`
+--
+ALTER TABLE `message`
+  ADD PRIMARY KEY (`message_id`),
+  ADD KEY `category_id` (`category_id`);
+
+--
+-- Indexes for table `message_categorys`
+--
+ALTER TABLE `message_categorys`
+  ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `pay_data`
+--
+ALTER TABLE `pay_data`
+  ADD PRIMARY KEY (`user_id`,`credit_no`),
+  ADD KEY `plan_id` (`plan_id`);
+
+--
+-- Indexes for table `plan`
+--
+ALTER TABLE `plan`
+  ADD PRIMARY KEY (`plan_id`);
+
+--
+-- Indexes for table `Users`
+--
+ALTER TABLE `Users`
+  ADD PRIMARY KEY (`user_Id`);
+
+--
+-- Indexes for table `video`
+--
+ALTER TABLE `video`
+  ADD PRIMARY KEY (`video_id`,`category_id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `category_id` (`category_id`);
+
+--
+-- Indexes for table `video_categorys`
+--
+ALTER TABLE `video_categorys`
+  ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indexes for table `video_mylist`
+--
+ALTER TABLE `video_mylist`
+  ADD PRIMARY KEY (`user_id`,`video_id`,`mylist_id`),
+  ADD KEY `video_id` (`video_id`);
+
+--
+-- Indexes for table `watch_data`
+--
+ALTER TABLE `watch_data`
+  ADD PRIMARY KEY (`watch_id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `video_id` (`video_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `Users`
+--
+ALTER TABLE `Users`
+  MODIFY `user_Id` int(128) NOT NULL AUTO_INCREMENT COMMENT 'ユーザーID';
+
+--
+-- ダンプしたテーブルの制約
+--
+
+--
+-- テーブルの制約 `manager`
+--
+ALTER TABLE `manager`
+  ADD CONSTRAINT `manager_ibfk_1` FOREIGN KEY (`authority_id`) REFERENCES `manager_authority` (`authority_id`);
+
+--
+-- テーブルの制約 `message`
+--
+ALTER TABLE `message`
+  ADD CONSTRAINT `message_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `message_categorys` (`category_id`);
+
+--
+-- テーブルの制約 `pay_data`
+--
+ALTER TABLE `pay_data`
+  ADD CONSTRAINT `pay_data_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`user_Id`),
+  ADD CONSTRAINT `pay_data_ibfk_2` FOREIGN KEY (`plan_id`) REFERENCES `plan` (`plan_id`);
+
+--
+-- テーブルの制約 `video`
+--
+ALTER TABLE `video`
+  ADD CONSTRAINT `video_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`user_Id`),
+  ADD CONSTRAINT `video_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `video_categorys` (`category_id`);
+
+--
+-- テーブルの制約 `video_mylist`
+--
+ALTER TABLE `video_mylist`
+  ADD CONSTRAINT `video_mylist_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`user_Id`),
+  ADD CONSTRAINT `video_mylist_ibfk_2` FOREIGN KEY (`video_id`) REFERENCES `video` (`video_id`);
+
+--
+-- テーブルの制約 `watch_data`
+--
+ALTER TABLE `watch_data`
+  ADD CONSTRAINT `watch_data_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`user_Id`),
+  ADD CONSTRAINT `watch_data_ibfk_2` FOREIGN KEY (`video_id`) REFERENCES `video` (`video_id`);
